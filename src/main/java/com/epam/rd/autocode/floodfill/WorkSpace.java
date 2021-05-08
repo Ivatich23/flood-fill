@@ -37,6 +37,6 @@ public class WorkSpace implements FloodFill,FloodLogger {
 
     @Override
     public void log(String floodState) {
-
+        System.out.println(floodState);
     }
 }
