@@ -1,6 +1,6 @@
 package com.epam.rd.autocode.floodfill;
 
-public class WorkSpace implements FloodFill, FloodLogger {
+public class FloodFillImpl implements FloodFill {
 
     @Override
     public void flood(String map, FloodLogger logger) {
@@ -33,11 +33,6 @@ public class WorkSpace implements FloodFill, FloodLogger {
             String newMap = String.valueOf(tempMap);
             flood(newMap, logger);
         }
-
-    }
-
-    @Override
-    public void log(String floodState) {
 
     }
 }
